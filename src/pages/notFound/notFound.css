@@ -1,0 +1,15 @@
+.notfound__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 23.7rem;
+    text-align: center;
+    padding-top: 8rem;
+}
+.notfound__container h1{
+    color: var(--accent-color);
+}
+.notfound__container .btn{
+    margin-top: 2rem;
+    display: inline-block;
+}

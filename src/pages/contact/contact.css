@@ -1,0 +1,116 @@
+.contact__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    justify-content: center;
+}
+
+.contact__buttons{
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact__buttons a{
+    background: var(--accent-color);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding: 2rem 2.2rem 1.3rem 2.2rem;
+    border-radius: 1.5rem;
+}
+
+.contact__buttons svg{
+    color: var(--bg-green-dark);
+}
+
+.contact__buttons a:hover{
+    background: white;
+    border-color: var(--color-light);
+}
+.contact__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1.2rem;
+    font-weight: 300;
+    background-color: var(--bg-green);
+    padding: 2rem 3rem;
+    border: 2px solid var(--bg-green);
+    border-radius: 2rem;
+}
+
+.contact__info:hover{
+   background-color: var(--bg-green-dark);
+    border-color: var(--accent-color);
+}
+
+
+.contact__info h3, .contact__info h2{
+    font-weight: 300;
+}
+
+.contact__info span, .contact__info span{
+    color: var(--accent-color);
+    margin-left: 1rem;
+}
+
+.contact__buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+iframe{
+    border-radius: 1rem;
+    width: 400px;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contact__container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact__buttons{
+        gap: 1.5rem;
+    }
+
+    .contact__buttons a{
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    }
+    .contact__buttons svg{
+        color: var(--bg-green-dark);
+    }
+    .contact__info h2{
+        font-size: 130%;
+    }
+    iframe{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .contact__container{
+        grid-template-columns: 1fr;
+    }
+    .contact__buttons{
+        flex-direction: column;
+    }
+
+    .contact__info{
+        width: 100%;
+    }
+
+    .contact__info h3 span, .contact__info h2 span{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    iframe{
+        width: 250px;
+    }
+}

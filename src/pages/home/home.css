@@ -1,0 +1,449 @@
+.main__header{
+    background: var(--bg-color);
+    margin-top: 5rem;
+    background-image: url("./bg-texture.png");
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    
+}
+
+.main__header-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.main__header-left {
+    margin-top: -3rem;
+}
+
+.main__header-left h4{
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    font-weight: 400;
+}
+
+.main__header-left p {
+    font-size: 1.1rem;
+    padding: 1rem 0rem 3rem;
+}
+
+.main__header-right{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.hammer-pic{
+    width: 70%;
+}
+
+.main__header-right img {
+    filter: drop-shadow(0 0 0.5rem #000);
+    transform-origin: center bottom;
+    animation: swing 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes swing {
+    0%{
+        transform: rotate(-26deg);
+    }
+    100%{
+        transform: rotate(-8deg);
+    }
+}
+
+.products{
+    margin-top: 0;
+    padding-bottom: 8rem;
+}
+.products__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.products__product a{
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/*========= PORTFOLIO =========*/
+.portfolio{
+    margin: 0;
+    background: var(--bg-green-dark);
+}
+.portfolio__container{
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 12%;
+}
+
+.portfolio__image{
+    transition: var(--transition);
+}
+
+.portfolio__image:hover{
+    filter: saturate(2);
+}
+
+.portfolio__image img{
+    border-radius: 2rem;
+}
+
+.portfolio__p{
+    margin: 1.5rem 0 5rem;
+}
+
+.portfolio__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.4rem 2.4rem;
+}
+
+.card.portfolio__item{
+    padding-top: 3.5rem;
+    text-align: left;
+    position: relative;
+}
+.card.portfolio__item small{
+    text-align: left;
+}
+
+.card.portfolio__item span{
+    position: absolute;
+    top: -1.5rem;
+}
+
+
+/*==========FAQ=============*/
+.faqs {
+    margin-top: 0;
+    padding-top: 8rem;
+    background: var(--bg-green-dark);
+    padding-bottom: 8rem;
+}
+.faqs h2{
+    margin-bottom: 4rem;
+}
+.faqs__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+    align-items: flex-start;
+}
+
+.faq{
+    background: var(--bg-green);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--bg-green);
+}
+.faq:hover{
+    background: var(--bg-green-dark);
+    border: 2px solid var(--accent-color);
+}
+
+.faq div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.faq__icon{
+    background: transparent;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.faq p{
+    margin-top: 1.5rem;
+}
+
+/*=============TESTIMONIALS =========== */
+
+.testimonials{
+    background: var(--bg-green-dark);
+    width: 50rem;
+    margin-inline: auto;
+}
+
+.testimonials__title{
+    justify-content: center;
+}
+
+.card.testimonial{
+    border-radius: 1.5rem;
+    position: relative;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.testimonial__avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+}
+
+.testimonial:hover .testimonial__avatar{
+    border-radius: 50%;
+
+}
+
+.testimonial__quotes{
+    font-style: italic;
+    margin: 1rem 0 2rem;
+}
+
+.card small.testimonial__title{
+    margin-top: 0.3rem;
+    text-align: left;
+}
+
+.testimonials__btn-container{
+    width: fit-content;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials__btn{
+    background: transparent;
+    cursor: pointer;
+}
+
+.testimonials__btn svg{
+    fill: var(--accent-color);
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer__logo__div {
+    background: var(--bg-green);
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+}
+
+/*=========FOOTER==========*/
+
+footer{
+    background: var(--accent-color);
+    margin-top: 7rem;
+    padding-top: 7rem;
+    font-size: 0.9rem;
+    color: var(--color-light);
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap: 6rem;
+    padding-bottom: 4rem;
+}
+
+.footer__container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.footer__container article p{
+    margin-top: 0.5rem;
+    color: var(--bg-green-dark);
+}
+
+.footer__container article h4{
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    color: var(--bg-green-dark);
+}
+.footer__container article a{
+    color: var(--bg-green-dark);
+}
+.footer__socials{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__socials a{
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    background: var(--bg-green);
+    padding: 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transition: var(--transition);
+}
+
+.footer__socials a svg{
+    color: var(--accent-color);
+    margin-bottom: 3px;
+}
+
+
+.footer__copyright{
+    background: var(--bg-green-dark);
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+
+/*=========RESPONSIVE FOR TABLETS=============*/
+@media screen and (max-width: 1024px) {
+    /*MAIN HEADER*/
+    .main__header{
+        height: fit-content;
+        padding: 5rem 0 1rem;
+    }
+    .main__header-container{
+        gap: 0;
+    }
+    .hammer-pic{
+        width: 100%;
+        margin-bottom: 22rem;
+    }
+
+    /*PRODUCTS*/
+    .products__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*PORTFOLIO*/
+    .portfolio__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .portfolio__wrapper{
+        gap: 4rem 3rem;
+    }
+    .portfolio__left{
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio__image{
+        width: 50%;
+    }
+
+    /*FAQs*/
+    .faqs__wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    /*TESTIMONIALS*/
+    .testimonials{
+        width: 75%;
+    }
+    .product.testimonials__title h2{
+        font-size: 3rem;
+    }
+    /*FOOTER*/
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+
+/*=========RESPONSIVE FOR PHONES=============*/
+@media screen and (max-width: 600px) {
+    /*MAIN HEADER*/
+    .main__header-container{
+        grid-template-columns: 1fr;
+    }
+    .main__header{
+        margin-top: 0;
+        padding: 12rem 0 0;
+    }
+    .main__header-left h2{
+        font-size: 1.5rem;
+    }
+    .main__header-right{
+        display: flex;
+        justify-content: right;
+    }
+    .main__header-img{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hammer-pic{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 15rem;
+    }
+/*PRODUCTS*/
+    .products__wrapper{
+        margin-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .products h2{
+        font-size: 2rem;
+    }
+/*PORTFOLIO*/
+    .portfolio__image{
+        width: 90%;
+    }
+    .portfolio__wrapper{
+        margin-top: 1rem;
+        grid-template-columns: 1fr;
+        
+    }
+    .portfolio h2{
+        font-size: 2rem;
+    }
+    .portfolio__p{
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+
+    /*FAQs*/
+    .faqs h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    /*TESTIMONIALS*/
+    .product.testimonials__title h2{
+        font-size: 2rem;
+    }
+
+    /*FOOTER*/
+    .footer__container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container article{
+        align-items: center;
+    }
+    .footer__container article p{
+        text-align: center;
+    }
+}
